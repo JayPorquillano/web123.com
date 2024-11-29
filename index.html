@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Profile Header Section -->
+    <header class="profile-header">
+        <div class="container">
+            <div class="profile-info">
+                <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+                <div>
+                    <h1>Jay Q. Porquillano</h1>
+                    <p><i class="fas fa-briefcase"></i> Consultant-Assistant Instructor</p>
+                    <p><i class="fas fa-map-marker-alt"></i> AMA College of Computing</p>
+                </div>
+            </div>
+            <div class="profile-actions">
+                <button><i class="fas fa-user-edit"></i> Edit Profile</button>
+                <button><i class="fas fa-envelope"></i> Message</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#posts"><i class="fas fa-stream"></i> Posts</a></li>
+                <li><a href="#friends"><i class="fas fa-users"></i> Friends</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="content">
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2><i class="fas fa-info-circle"></i> About</h2>
+                <p>Hello! I'm Jay, a technology enthusiast and an instructor passionate about helping students excel in computing and AI.</p>
+            </div>
+        </section>
+
+        <!-- Posts Section -->
+        <section id="posts" class="posts-section">
+            <div class="container">
+                <h2><i class="fas fa-pencil-alt"></i> Posts</h2>
+
+                <!-- Post 1 -->
+                <div class="post">
+                    <div class="user">
+                        <img src="images/user1.jpg" alt="User 1" class="user-avatar">
+                        <h3>Jane Doe</h3>
+                        <p class="timestamp"><i class="fas fa-clock"></i> 2 hours ago</p>
+                    </div>
+                    <p class="post-text">Just finished an amazing workshop on AI and robotics! 🤖</p>
+                    <img src="images/post1.jpg" alt="AI Workshop" class="post-image">
+                    <div class="post-actions">
+                        <button class="like-button"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span> Like</button>
+                        <button class="comment-button"><i class="fas fa-comment"></i> Comment</button>
+                        <button class="share-button"><i class="fas fa-share"></i> Share</button>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="post">
+                    <div class="user">
+                        <img src="images/user2.jpg" alt="User 2" class="user-avatar">
+                        <h3>John Smith</h3>
+                        <p class="timestamp"><i class="fas fa-clock"></i> 5 hours ago</p>
+                    </div>
+                    <p class="post-text">Beautiful sunset at the beach today! 🌅</p>
+                    <img src="images/post2.jpg" alt="Beach Sunset" class="post-image">
+                    <div class="post-actions">
+                        <button class="like-button"><i class="fas fa-thumbs-up"></i> <span class="like-count">0</span> Like</button>
+                        <button class="comment-button"><i class="fas fa-comment"></i> Comment</button>
+                        <button class="share-button"><i class="fas fa-share"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Friends Section -->
+        <section id="friends" class="friends-section">
+            <div class="container">
+                <h2><i class="fas fa-users"></i> Friends</h2>
+                <div class="friend-list">
+                    <div class="friend">
+                        <img src="images/friend1.jpg" alt="Friend 1">
+                        <p>Mark Wilson</p>
+                    </div>
+                    <div class="friend">
+                        <img src="images/friend2.jpg" alt="Friend 2">
+                        <p>Anna Lee</p>
+                    </div>
+                    <div class="friend">
+                        <img src="images/friend3.jpg" alt="Friend 3">
+                        <p>Chris Wong</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2><i class="fas fa-envelope"></i> Contact</h2>
+        <p>If you have any questions or concerns, feel free to reach out using the form below. Your message will be sent directly to the owner.</p>
+        
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+            </div>
+            <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Social Media Profile. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
